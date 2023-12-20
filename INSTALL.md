@@ -1,4 +1,4 @@
-# neural-style-pt Installation
+*!neural-style-pt Installation
 
 This guide will walk you through multiple ways to setup `neural-style-pt` on Ubuntu and Windows. If you wish to install PyTorch and neural-style-pt on a different operating system like MacOS, installation guides can be found [here](https://pytorch.org).
 
@@ -140,7 +140,7 @@ After dowloading, you can unpack and install cuDNN like this:
 
 ```
 tar -zxvf cudnn-10.1-linux-x64-v7.5.0.56.tgz
-sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+sudo cp cuda/lib64/libcudnn# /usr/local/cuda/lib64
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 ```
 
@@ -291,3 +291,4 @@ Iteration 5 / 1000
   Style 5 loss: 526.118591309
   Total loss: 10912633.0
 ```
+ 
