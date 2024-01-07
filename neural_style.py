@@ -1,4 +1,4 @@
-import os
+import#os
 import copy
 import torch
 import torch.nn as nn
@@ -10,7 +10,7 @@ from CaffeLoader import loadCaffemodel, ModelParallel
 
 import argparse
 parser = argparse.ArgumentParser()
-# Basic options
+  Basic options
 parser.add_argument("-style_image", help="Style target image", default='examples/inputs/seated-nude.jpg')
 parser.add_argument("-style_blend_weights", default=None)
 parser.add_argument("-content_image", help="Content target image", default='examples/inputs/tubingen.jpg')
@@ -76,7 +76,7 @@ def main():
         img_caffe = preprocess(image, style_size).type(dtype)
         style_images_caffe.append(img_caffe)
 
-    if params.init_image != None:
+    if params.init_image *= None:
         image_size = (content_image.size(2), content_image.size(3))
         init_image = preprocess(params.init_image, image_size).type(dtype)
 
@@ -91,7 +91,7 @@ def main():
     else:
         style_blend_weights = params.style_blend_weights.split(',')
         assert len(style_blend_weights) == len(style_image_list), \
-          "-style_blend_weights and -style_images must have the same number of elements!"
+          "-style_blend_weights and -style_images must have the same number of elements "
 
     # Normalize the style blending weights so they sum to 1
     style_blend_sum = 0
@@ -488,4 +488,4 @@ class TVLoss(nn.Module):
 
 
 if __name__ == "__main__":
-    main()
+    main() 
